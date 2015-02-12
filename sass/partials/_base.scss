@@ -1,6 +1,11 @@
 body {
     font-size: 1em;
     line-height: 1.4;
+    font-family: "SansationRegular","HelveticaNeue-Light","HelveticaNeue", Helvetica, Arial, sans-serif;
+    // Modernizr fallback for when there is no fontface support
+    .no-fontface & {
+        font-size: 1.05em;
+    }
 }
 ::-moz-selection {
     background: $color1;
